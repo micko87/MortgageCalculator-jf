@@ -45,7 +45,6 @@ public class MortgageCalculator {
 			getValuesFromUser();
 			calculatePayments();
 			displayPayments();
-			farewellUser();
 
 		}
 		farewellUser();
@@ -108,6 +107,7 @@ public class MortgageCalculator {
 	 * @return
 	 */
 	private static boolean requestToContinue() {
+
 		System.out.println("Request To Continue:\n---------------");
 		while (true) {
 			System.out.println("Would you like to calculate another mortgage");
@@ -118,7 +118,6 @@ public class MortgageCalculator {
 				return false;
 			} else {
 				System.out.println("Invalid option (" + input + "), please use Yes/Y or No/N.");
-
 			}
 		}
 
